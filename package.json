@@ -1,5 +1,5 @@
 {
-  "name": "tailwindcss-filters",
+  "name": "@jinsung.lim/tailwindcss-filters",
   "version": "0.1.0",
   "keywords": [
     "tailwindcss"
@@ -12,14 +12,12 @@
     "build": "next build",
     "start": "next start"
   },
-  "dependencies": {
-    "next": "10.0.3",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  },
   "devDependencies": {
+    "next": "^10.0.3",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "tailwindcss": "^2.0.1"
   },
   "author": {
