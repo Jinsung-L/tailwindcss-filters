@@ -1,9 +1,14 @@
 {
   "name": "tailwindcss-filters",
   "version": "0.1.0",
-  "private": true,
+  "keywords": [
+    "tailwindcss"
+  ],
+  "description": "Tailwind CSS plugin for CSS filters and backdrop filters",
+  "main": "src/index.js",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/build.js",
     "build": "next build",
     "start": "next start"
   },
@@ -11,5 +16,27 @@
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.0.1"
+  },
+  "author": {
+    "email": "js99028@gmail.com",
+    "name": "Jinsung Lim",
+    "url": "https://github.com/Jinsung-L"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jinsung-L/tailwindcss-filters"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jinsung-L/tailwindcss-filters/issues"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }

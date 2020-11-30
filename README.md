@@ -1,30 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# tailwindcss-filters
 
-## Getting Started
+A plugin that provides utilities for CSS [filters](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) and [backdrop filters](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter).
 
-First, run the development server:
+## Installation
 
-```bash
-npm run dev
-# or
-yarn dev
+Install the plugin from npm:
+
+```sh
+# Using npm
+npm install @jinsung.lim/tailwindcss-filters
+
+# Using Yarn
+yarn add @jinsung.lim/tailwindcss-filters
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then add the plugin to your `tailwind.config.js` file:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```js
+// tailwind.config.js
 
-## Learn More
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@jinsung.lim/tailwindcss-filters'),
+    // ...
+  ],
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[**View the live demo**](https://tailwindcss-filters.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```html
+<!-- Filter -->
+<img class="filter filter-blur-5 ..." />
+<img class="filter filter-bright-50 ..." />
+<img class="filter filter-contrast-200 ..." />
 
-## Deploy on Vercel
+<!-- Backdrop Filter -->
+<img class="backdrop backdrop-blur-5 ..." />
+<img class="backdrop backdrop-bright-50 ..." />
+<img class="backdrop backdrop-contrast-200 ..." />
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+More filters & backdrop filters are available.
+[**View the live demo**](https://tailwindcss-filters.vercel.app/) to see the full list of provided utilities.
