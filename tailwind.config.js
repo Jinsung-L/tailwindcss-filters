@@ -11,5 +11,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('./src/index')],
+  plugins: [require('./src/index'), require('@tailwindcss/aspect-ratio')],
 }
