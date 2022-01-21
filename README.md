@@ -1,3 +1,6 @@
+# DEPRECATED: [tailwindcss now supports native filters and backdrop features](https://tailwindcss.com/docs/blur)
+
+
 # tailwindcss-filters
 
 A plugin that provides utilities for CSS [filters](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) and [backdrop filters](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter).
